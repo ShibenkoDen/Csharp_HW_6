@@ -16,10 +16,16 @@ double k1 = getUserData ("Введите k1");
 double b2 = getUserData ("Введите b2");
 double k2 = getUserData ("Введите k2");
 
+if (k1 == k2)
+{
+    Console.WriteLine ("Две прямые не пересекаются");
+}
+else
+{
 double x = (b2-b1)/(k1-k2);
 double y = k1*((b2-b1)/(k1-k2))+b1;
 
 Console.WriteLine ($"Две прямые пересекаются в точке [{x}, {y}]");
-
+}
 
 
